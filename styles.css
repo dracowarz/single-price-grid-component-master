@@ -1,0 +1,156 @@
+@import url("https://fonts.google.com/specimen/Karla");
+
+.attribution { font-size: 11px; text-align: center; margin-top: 15px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 22%, 67%);
+}
+
+main {
+    width: 50%;
+    box-shadow: 5px 5px 0 hsl(0, 0%, 30%);
+}
+
+.community-container {
+    padding: 50px;
+    background-color: hsl(0, 0%, 90%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.c-h1, .c-h2,
+.s-title, .w-title { font-weight: 700; }
+
+.c-h1 {
+    color: hsl(179, 62%, 35%);
+    font-size: 1.5em;
+}
+
+.c-h2 {
+    color: hsl(71, 73%, 45%);
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 1.2em;
+}
+
+.c-description {
+    color: hsl(218, 22%, 67%);
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.subscription-container { 
+    background-color: hsl(179, 62%, 35%);
+    border-bottom-left-radius: 10px;
+    padding: 45px;
+}
+
+.s-title, 
+.w-title {
+    color: hsl(0, 0%, 90%);
+    font-size: 1.3em;
+}
+
+.s-description,
+.w-description {
+    font-size: 17px;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.s-price {
+    margin-top: 20px;
+    color: hsl(0, 0%, 90%);
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.s-month {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.45;
+    vertical-align: middle;
+}
+
+.s-description {
+    margin-top: 15px;
+}
+
+.sign-up {
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 90%);
+    background-color: hsl(71, 73%, 45%);
+    font-size: 1em;
+    font-weight: bold;
+    width: 80%;
+    padding: 18px;
+    margin-top: 35px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 hsl(0, 0%, 30%);
+}
+
+.why-us-container { 
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-right-radius: 10px;
+    padding: 45px;
+}
+
+.w-description {
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        height: 180vh;
+        padding: 20px 0; 
+    }
+    main { width: 90%; }
+
+    .community-container { padding: 50px 30px; }
+
+    .subscription-container,
+    .why-us-container { padding: 45px 30px;}
+
+    .subscription-container { border-bottom-left-radius: 0;}
+
+    .c-h2 { margin-top: 30px; }
+    .c-description { margin-top: 25px; }
+
+    .why-us-container { border-bottom-left-radius: 10px; }
+
+    .container { display: block; }
+    .sign-up { width: 100%;}
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    body {
+        height: 100vh;
+        padding: 20px 0;
+    }
+
+    main { width: 95%;}
+    .sign-up { width: 100%; }
+}
